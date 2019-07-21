@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: 'Vue Admin Template',
+  title: '企业人力资源管理师微信增值服务平台管理系统',
 
   /**
    * @type {boolean} true | false

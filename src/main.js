@@ -4,17 +4,20 @@ import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import locale from 'element-ui/lib/locale/lang/en' // lang i18n
-
+import locale from 'element-ui/lib/locale/lang/zh-CN' // lang i18n
+import tools from '@/utils/worktools.js'
 import '@/styles/index.scss' // global css
 
 import App from './App'
 import store from './store'
 import router from './router'
-
+import echarts from 'echarts'
 import '@/icons' // icon
 import '@/permission' // permission control
-
+import api from '@/api'
+Vue.prototype.$api = api
+Vue.prototype.$echarts = echarts
+Vue.prototype.$tools = tools
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
